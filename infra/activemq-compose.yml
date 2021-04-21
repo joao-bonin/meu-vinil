@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  activemq:
+    container_name: meu-vinil-activemq
+    image: rmohr/activemq:5.15.6-alpine
+    ports:
+      - 8161:8161 #admin
+      - 61613:61613 #stomp
+      - 61616:61616 #jms
