@@ -17,6 +17,7 @@ apply plugin:"idea"
 apply plugin:"war"
 apply plugin:"org.grails.grails-web"
 apply plugin:"org.grails.plugins.views-json"
+apply plugin: 'jacoco'
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
@@ -84,5 +85,11 @@ bootRun {
 tasks.withType(GroovyCompile) {
     configure(groovyOptions) {
         forkOptions.jvmArgs = ['-Xmx1024m']
+    }
+}
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled false
     }
 }
