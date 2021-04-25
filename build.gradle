@@ -58,7 +58,6 @@ dependencies {
     profile "org.grails.profiles:rest-api"
     runtime "org.glassfish.web:el-impl:2.1.2-b03"
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
-    runtime "com.h2database:h2"
     runtime "org.apache.tomcat:tomcat-jdbc"
     runtime "javax.xml.bind:jaxb-api:2.3.1"
     testCompile "io.micronaut:micronaut-inject-groovy"
